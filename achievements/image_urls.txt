@@ -1,0 +1,28 @@
+# Creative Commons / Wikimedia Commons Image URLs for Indian Olympic Athletes
+
+1. Neeraj Chopra (Gold, Javelin Throw):
+https://upload.wikimedia.org/wikipedia/commons/7/7a/Neeraj_Chopra_Tokyo_Olympics_2020.jpg
+
+2. PV Sindhu (Bronze, Badminton):
+https://upload.wikimedia.org/wikipedia/commons/5/5e/PV_Sindhu_at_the_2020_Tokyo_Olympics.jpg
+
+3. Mirabai Chanu (Silver, Weightlifting):
+https://upload.wikimedia.org/wikipedia/commons/e/e7/Mirabai_Chanu_at_the_2020_Tokyo_Olympics.jpg
+
+4. Indian Hockey Team (Bronze):
+https://upload.wikimedia.org/wikipedia/commons/9/9d/Indian_Men%27s_Hockey_Team_Tokyo_Olympics_2020.jpg
+
+5. Bajrang Punia (Bronze, Wrestling):
+https://upload.wikimedia.org/wikipedia/commons/1/1a/Bajrang_Punia_at_the_2020_Tokyo_Olympics.jpg
+
+6. Ravi Kumar Dahiya (Silver, Wrestling):
+https://upload.wikimedia.org/wikipedia/commons/c/c0/Ravi_Kumar_Dahiya_at_the_2020_Tokyo_Olympics.jpg
+
+# Instructions:
+# 1. Open each URL in a web browser
+# 2. Right-click and select "Save Image As..."
+# 3. Save each image in the /achievements/ directory
+# 4. Name them achievement1.jpg, achievement2.jpg, etc.
+
+# Licensing: These images are from Wikimedia Commons and are typically 
+# available under Creative Commons licenses for non-commercial use.

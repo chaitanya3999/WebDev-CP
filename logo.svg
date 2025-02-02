@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <linearGradient id="sportGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2C5EF0;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00B4DB;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="95" fill="url(#sportGradient)" />
+    
+    <!-- Stylized Sports Elements -->
+    <path d="M50,75 Q100,50 150,75" stroke="white" stroke-width="8" fill="none" />
+    <path d="M50,125 Q100,100 150,125" stroke="white" stroke-width="8" fill="none" />
+    
+    <!-- Trophy Symbol -->
+    <path d="M70,60 L130,60 L130,80 A30,30 0 0,1 100,110 A30,30 0 0,1 70,80 Z" 
+          fill="white" />
+    
+    <!-- Athlete Silhouette -->
+    <path d="M100,140 L85,170 Q100,180 115,170 Z" fill="white" />
+</svg>
