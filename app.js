@@ -44,7 +44,7 @@ const featuredAthletes = [
 ];
 
 function renderAchievements() {
-    const achievementSlider = document.querySelector('.achievement-slider');
+    const achievementSlider = document.querySelector('.featured-achievements');
     achievementSlider.innerHTML = achievements.map(achievement => `
         <div class="achievement-card" style="background-color: rgba(26, 115, 232, 0.1);">
             <div class="achievement-icon">${achievement.icon}</div>

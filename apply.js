@@ -34,7 +34,6 @@ function handleApplicationSubmit(event) {
 }
 
 function validateFormData(data) {
-    // Required fields validation
     const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'dob', 'sport', 'program'];
     
     for (let field of requiredFields) {
@@ -44,21 +43,18 @@ function validateFormData(data) {
         }
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(data.email)) {
         alert('Please enter a valid email address');
         return false;
     }
 
-    // Phone validation
     const phoneRegex = /^\d{10}$/;
     if (!phoneRegex.test(data.phone)) {
         alert('Please enter a valid 10-digit phone number');
         return false;
     }
 
-    // Date of birth validation
     const dob = new Date(data.dob);
     const today = new Date();
     const age = today.getFullYear() - dob.getFullYear();
@@ -67,7 +63,6 @@ function validateFormData(data) {
         return false;
     }
 
-    // Experience validation
     if (data.experience && (data.experience < 0 || data.experience > 50)) {
         alert('Please enter a valid experience between 0 and 50 years');
         return false;
