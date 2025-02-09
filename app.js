@@ -1,4 +1,3 @@
-// Dynamic Achievement Slider
 const achievements = [
     {
         title: "Olympic Gold Triumph",
@@ -70,7 +69,6 @@ function renderAthletes() {
     `).join('');
 }
 
-// Form Submission Handler with Enhanced Validation
 function handleFormSubmission(event) {
     event.preventDefault();
     const form = event.target;
@@ -78,7 +76,7 @@ function handleFormSubmission(event) {
     const emailInput = form.querySelector('input[placeholder="Your Email"]');
     const messageInput = form.querySelector('textarea');
     
-    // Basic validation
+
     const nameValid = nameInput.value.trim().length > 2;
     const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
     const messageValid = messageInput.value.trim().length > 10;
@@ -108,19 +106,16 @@ function handleFormSubmission(event) {
     }
 
     if (nameValid && emailValid && messageValid) {
-        // In a real-world scenario, you would send this data to a backend service
         console.log('Form Submitted Successfully');
         console.log(`Name: ${nameInput.value}`);
         console.log(`Email: ${emailInput.value}`);
         console.log(`Message: ${messageInput.value}`);
 
-        // Show success message
         const successMessage = document.createElement('div');
         successMessage.classList.add('success-message');
         successMessage.textContent = 'Thank you for your message! We will get back to you soon.';
         form.appendChild(successMessage);
 
-        // Remove success message after 3 seconds
         setTimeout(() => {
             successMessage.remove();
             form.reset();
@@ -128,7 +123,6 @@ function handleFormSubmission(event) {
     }
 }
 
-// Smooth Scrolling for Navigation
 function smoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -140,7 +134,6 @@ function smoothScroll() {
     });
 }
 
-// Intersection Observer for Animations
 function setupScrollAnimations() {
     const sections = document.querySelectorAll('section');
     const observerOptions = {
@@ -164,7 +157,6 @@ function setupScrollAnimations() {
     });
 }
 
-// Initialize Page
 document.addEventListener('DOMContentLoaded', () => {
     renderAchievements();
     renderAthletes();

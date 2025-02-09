@@ -1,4 +1,3 @@
-/* Modern Color Palette and Typography */
 :root {
     --primary-color: #1a73e8;
     --secondary-color: #34a853;
@@ -8,7 +7,6 @@
     --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* Glassmorphic Navigation */
 header {
     position: fixed;
     width: 100%;
@@ -91,7 +88,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Logo Styling */
 header .logo {
     display: flex;
     align-items: center;
@@ -109,7 +105,6 @@ header .logo img:hover {
     transform: scale(1.1);
 }
 
-/* Modern Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -127,6 +122,11 @@ header .logo img:hover {
     text-align: center;
     position: relative;
     z-index: 10;
+    top: 20px;
+}
+
+.hero-bottom{
+    top: 50px;
 }
 
 .hero h2 {
@@ -163,7 +163,6 @@ header .logo img:hover {
     box-shadow: 0 15px 25px rgba(255, 204, 0, 0.4);
 }
 
-/* Modern Sections */
 .initiatives, .achievements, .featured-athletes, .contact {
     max-width: 1200px;
     margin: 80px auto;
@@ -222,14 +221,21 @@ header .logo img:hover {
 }
 
 .initiative-card img, .athlete-card img {
-    max-width: 100px;
+    max-width: 200px;
     margin-bottom: 20px;
     border-radius: 50%;
 }
 
-/* Contact Form */
+.athlete-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .contact form {
     max-width: 500px;
+
     margin: 0 auto;
     background: white;
     padding: 40px;
@@ -270,7 +276,6 @@ header .logo img:hover {
     background-color: #1557b0;
 }
 
-/* Footer */
 footer {
     background-color: var(--text-color);
     color: white;
@@ -294,7 +299,6 @@ footer {
     color: var(--primary-color);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -324,7 +328,6 @@ footer {
     }
 }
 
-/* Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -342,7 +345,6 @@ footer {
     background: #1557b0;
 }
 
-/* Scroll Animations */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -354,8 +356,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Achievement Slider Styles */
-.achievement-slider {
+.achievement-grid {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -364,29 +365,46 @@ footer {
     scrollbar-width: none;
 }
 
-.achievement-slider::-webkit-scrollbar {
+.achievement-grid::-webkit-scrollbar {
     display: none;
 }
 
 .achievement-card {
     flex: 0 0 300px;
     border-radius: 15px;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
     scroll-snap-align: center;
     transition: transform 0.3s ease;
+    background: white;
+    display: flex;
+    align-items: center;
 }
 
 .achievement-card:hover {
     transform: scale(1.05);
 }
 
+.achievement-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.achievement-description {
+    text-align: center;
+    color: var(--text-color-light);
+    line-height: 1.5;
+}
+
 .achievement-icon {
-    font-size: 3rem;
+    width: 40px;
+    height: 40px;
     margin-bottom: 15px;
 }
 
-/* Athlete Card Styles */
 .athlete-card {
     color: var(--text-color);
     position: relative;
@@ -427,7 +445,6 @@ footer {
     object-fit: cover;
 }
 
-/* Form Validation Styles */
 .contact input.error, 
 .contact textarea.error {
     border-color: #ff5252;
@@ -493,7 +510,6 @@ nav ul li a.active::after {
     background-color: var(--primary-color);
 }
 
-/* Hero Variations */
 .initiatives-hero, 
 .athletes-hero, 
 .programs-hero, 
@@ -507,7 +523,6 @@ nav ul li a.active::after {
     color: white;
 }
 
-/* Initiatives Page Styles */
 .initiative-details {
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -536,7 +551,6 @@ nav ul li a.active::after {
     margin-bottom: 20px;
 }
 
-/* Athletes Page Styles */
 .featured-athletes-section {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -591,7 +605,6 @@ nav ul li a.active::after {
     margin-bottom: 20px;
 }
 
-/* Programs Page Styles */
 .program-categories {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -665,7 +678,6 @@ nav ul li a.active::after {
     padding: 50px 20px;
 }
 
-/* Contact Page Styles */
 .contact-section {
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -775,7 +787,6 @@ nav ul li a.active::after {
     color: var(--primary-color);
 }
 
-/* Hero Section Updates */
 .hero-cta {
     display: flex;
     justify-content: center;
@@ -794,7 +805,6 @@ nav ul li a.active::after {
     border: 2px solid white;
 }
 
-/* Quick Links Section */
 .quick-links {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -840,13 +850,12 @@ nav ul li a.active::after {
     color: #1557b0;
 }
 
-/* Featured Achievements Section */
 .featured-achievements {
     background-color: white;
     padding: 50px 20px;
 }
 
-.achievements-slider {
+.achievements-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -875,13 +884,12 @@ nav ul li a.active::after {
 }
 
 .achievement-card .achievement-year {
-    display: block;
-    margin-top: 15px;
-    font-weight: 600;
     color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
-/* Featured Athletes Section */
 .featured-athletes-home {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -916,7 +924,6 @@ nav ul li a.active::after {
     text-align: center;
 }
 
-/* Upcoming Programs Section */
 .upcoming-programs {
     background-color: white;
     padding: 50px 20px;
@@ -967,7 +974,6 @@ nav ul li a.active::after {
     margin-bottom: 10px;
 }
 
-/* Newsletter Section */
 .newsletter {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
@@ -1015,7 +1021,6 @@ nav ul li a.active::after {
     background-color: #ffd633;
 }
 
-/* Footer Updates */
 footer {
     background-color: var(--text-color);
     color: white;
@@ -1077,4 +1082,99 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
+}
+
+.hero-video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.hero-video-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-achievements {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-achievements h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.achievement-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.achievement-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.achievement-year {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.achievement-description {
+    color: var(--text-color-light);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
 }

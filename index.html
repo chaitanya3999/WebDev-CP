@@ -7,20 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media-background.css">
     <link rel="stylesheet" href="sports-achievements.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
           <img src="logo.svg" alt="Sports Department Logo" class="logo-image" />
+          <h1>Sports Department</h1>
         </div>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -35,20 +30,17 @@
     <main>
       <section class="hero">
         <div class="hero-video-background">
-          <video autoplay loop muted playsinline class="background-video">
-            <source src="sports-background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <iframe src="https://www.youtube.com/embed/xyKoJOKtrBs?autoplay=1&mute=1&loop=1&playlist=xyKoJOKtrBs&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
+        <div class="hero-video-overlay"></div>
+        <div class="hero-video-content">
           <div class="hero-text">
             <h1>Champions of India</h1>
             <h2>Nurturing Athletic Excellence</h2>
             <p>Empowering athletes, inspiring a nation</p>
             <div class="hero-cta">
-              <a href="#achievements" class="btn btn-primary">Our Achievements</a>
-              <a href="#programs" class="btn btn-outline">Support Programs</a>
+              <a href="#" class="btn btn-primary">Our Achievements</a>
+              <a href="#" class="btn btn-outline">Support Programs</a>
             </div>
           </div>
           <div class="hero-achievements">
@@ -111,33 +103,23 @@
 
       <section class="featured-achievements">
         <h2 class="section-title">National Sporting Achievements</h2>
-        <div class="achievements-slider">
+        <div class="achievements-grid">
           <div class="achievement-card">
-            <i class="achievement-icon fas fa-medal"></i>
-            <h3>Olympic Success</h3>
-            <p>
-              Record-breaking performance at Tokyo Olympics with highest medal
-              count
-            </p>
-            <span class="achievement-year">2021</span>
+            <h3 class="achievement-title">Olympic Success</h3>
+            <div class="achievement-year">2021</div>
+            <p class="achievement-description">Record-breaking performance at Tokyo Olympics with highest medal count</p>
           </div>
+      
           <div class="achievement-card">
-            <i class="achievement-icon fas fa-globe"></i>
-            <h3>International Recognition</h3>
-            <p>
-              India ranked in top 10 countries for sports infrastructure
-              development
-            </p>
-            <span class="achievement-year">2022</span>
+            <h3 class="achievement-title">International Recognition</h3>
+            <div class="achievement-year">2022</div>
+            <p class="achievement-description">India ranked in top 10 countries for sports infrastructure development</p>
           </div>
+      
           <div class="achievement-card">
-            <i class="achievement-icon fas fa-chart-line"></i>
-            <h3>Youth Participation</h3>
-            <p>
-              50% increase in youth sports participation across national
-              programs
-            </p>
-            <span class="achievement-year">2023</span>
+            <h3 class="achievement-title">Youth Participation</h3>
+            <div class="achievement-year">2023</div>
+            <p class="achievement-description">50% increase in youth sports participation across national programs</p>
           </div>
         </div>
       </section>
@@ -165,7 +147,7 @@
           </div>
           <div class="athlete-card">
             <div class="athlete-image">
-              <img src="Bajrang-Punia-Image.jpeg" alt="Athlete 3" />
+              <img src="Mirabai-Chanu-Image.jpeg" alt="Athlete 3" />
             </div>
             <div class="athlete-info">
               <h3>Mirabai Chanu</h3>
@@ -283,6 +265,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
