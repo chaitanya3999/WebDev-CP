@@ -134,7 +134,7 @@ header .logo img:hover {
     font-weight: 700;
     margin-bottom: 20px;
     background: linear-gradient(to right, #ffffff, #e0e0e0);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -194,13 +194,20 @@ header .logo img:hover {
     transform: translateX(-50%);
 }
 
-.initiative-grid, .athlete-grid {
+.initiative-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
+.athlete-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
 .initiative-card, .athlete-card {
+
     background: white;
     border-radius: 15px;
     padding: 30px;
@@ -381,24 +388,42 @@ footer {
 
 /* Athlete Card Styles */
 .athlete-card {
-    color: white;
+    color: var(--text-color);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
+
 .athlete-image-container {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    overflow: hidden;
-    border: 4px solid white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 250px;
+    overflow: visible;
+    border-radius: 0;
+    clip-path: none;
+    object-fit: cover;
 }
 
 .athlete-image-container img {
     width: 100%;
     height: 100%;
+    border-radius: 0;
+    display: block;
+    object-fit: contain;
+    clip-path: none;
+    min-width: 352px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
 
@@ -530,16 +555,10 @@ nav ul li a.active::after {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-.athlete-card.detailed .athlete-image-container {
-    width: 250px;
-    height: 250px;
-    margin: 0;
-    border-radius: 0;
-}
-
 .athlete-details {
     padding: 20px;
     flex-grow: 1;
+    text-align: center;
 }
 
 .athlete-details .achievements ul {
@@ -886,17 +905,6 @@ nav ul li a.active::after {
 
 .athlete-card:hover {
     transform: translateY(-10px);
-}
-
-.athlete-card .athlete-image {
-    height: 300px;
-    overflow: hidden;
-}
-
-.athlete-card .athlete-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .athlete-card .athlete-info {
